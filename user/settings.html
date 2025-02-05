@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Bare Bears <span class="user-indicator" title="User Mode">User</span></h2>
+        <ul>
+            <li><a href="ordering.html" class="hover-effect">Ordering</a></li>
+            <li><a href="booking.html" class="hover-effect">Booking</a></li>
+            <li><a href="about.html" class="hover-effect">About</a></li>
+            <li><a href="settings.html" class="hover-effect">Settings</a></li>
+            <li><a href="logout.html" class="hover-effect">Log Out</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Settings</h1>
+        <p>Manage your preferences.</p>
+
+        <div class="settings-section">
+            <h2>Notification Settings</h2>
+            <form>
+                <label for="email-notifications">
+                    <input type="checkbox" id="email-notifications">
+                    Email Notifications
+                </label>
+
+                <label for="sms-notifications">
+                    <input type="checkbox" id="sms-notifications">
+                    SMS Notifications
+                </label>
+            </form>
+        </div>
+
+        <div class="settings-section">
+            <h2>Account Preferences</h2>
+            <form>
+                <label for="language">Language</label>
+                <select id="language">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                </select>
+
+                <label for="timezone">Time Zone</label>
+                <select id="timezone">
+                    <option value="gmt+8">GMT+8</option>
+                    <option value="gmt+5">GMT+5</option>
+                    <option value="gmt+0">GMT+0</option>
+                </select>
+            </form>
+        </div>
+
+        <button type="submit" class="save-btn">Save Preferences</button>
+    </div>
+</body>
+</html>

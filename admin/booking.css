@@ -15,14 +15,19 @@ body {
 }
 
 .sidebar h2 {
-  text-align: center;
+  text-align: margin-left;
   margin-bottom: 20px;
+}
+
+.admin-indicator {
+  font-size: 11px; /* Small size for subtlety */
+  color: #27ae60;  /* Green color to indicate 'active' or 'user mode' */
+  margin-left: 6px; 
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
-  margin-bottom: auto;
 }
 
 .sidebar ul li {

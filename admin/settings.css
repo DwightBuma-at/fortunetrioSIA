@@ -15,8 +15,14 @@ body {
 }
 
 .sidebar h2 {
-  text-align: center;
+  text-align: margin-left;
   margin-bottom: 20px;
+}
+
+.admin-indicator {
+  font-size: 11px; /* Small size for subtlety */
+  color: #27ae60;  /* Green color to indicate 'active' or 'user mode' */
+  margin-left: 6px; 
 }
 
 .sidebar ul {
@@ -58,58 +64,52 @@ p {
   color: #7f8c8d;
 }
 
-.sessions {
-  margin-top: 20px;
+.settings-section {
+  margin-bottom: 30px;
 }
 
-.session-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.session-card {
-  width: 250px;
-  padding: 20px;
-  background: #fff;
-  border: 1px solid #bdc3c7;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.session-card h3 {
+.settings-section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
   margin-bottom: 10px;
-  color: #34495e;
 }
 
-.session-card form {
+form {
   display: flex;
   flex-direction: column;
 }
 
-.session-card label {
+form label {
+  font-size: 1.1rem;
   margin-bottom: 5px;
-  color: #7f8c8d;
 }
 
-.session-card input {
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #bdc3c7;
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form select {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.session-card button {
-  padding: 10px 15px;
-  background-color: #2980b9;
+.save-btn {
+  padding: 10px 20px;
+  background-color: #2c3e50;
   color: white;
+  font-size: 1.2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  display: block;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
 }
 
-.session-card button:hover {
-  background-color: #3498db;
+.save-btn:hover {
+  background-color: #34495e;
 }

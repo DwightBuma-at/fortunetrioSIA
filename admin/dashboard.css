@@ -15,8 +15,14 @@ body {
 }
 
 .sidebar h2 {
-  text-align: center;
+  text-align: margin-left;
   margin-bottom: 20px;
+}
+
+.admin-indicator {
+  font-size: 11px; /* Small size for subtlety */
+  color: #27ae60;  /* Green color to indicate 'active' or 'user mode' */
+  margin-left: 6px; 
 }
 
 .sidebar ul {
@@ -56,54 +62,4 @@ h1 {
 
 p {
   color: #7f8c8d;
-}
-
-.settings-section {
-  margin-bottom: 30px;
-}
-
-.settings-section h2 {
-  font-size: 1.8rem;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-form input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-form select {
-  padding: 10px;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.save-btn {
-  padding: 10px 20px;
-  background-color: #2c3e50;
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-  margin-top: 20px;
-  width: 200px;
-  text-align: center;
-}
-
-.save-btn:hover {
-  background-color: #34495e;
 }
